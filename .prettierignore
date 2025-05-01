@@ -1,0 +1,16 @@
+# Ignore artifacts:
+build
+coverage
+node_modules
+.next
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# Ignore pnpm files
+pnpm-lock.yaml
+package.json
+tailwind.config.js
+postcss.config.mjs
+tsconfig.json
+next.config.ts

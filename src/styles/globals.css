@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* For Chrome, Safari, and Opera */
+  ::-webkit-scrollbar {
+    width: 6px;
+    /* Width of the scrollbar */
+  }
+
+  .scroll_hidden {
+    scrollbar-width: none;
+    /* For Firefox */
+    -ms-overflow-style: none;
+    /* For Internet Explorer and Edge */
+
+    /* For WebKit-based browsers (Chrome, Safari, etc.) */
+    ::-webkit-scrollbar {
+      width: 0px;
+      height: 0px;
+    }
+  }
+
+  ::-webkit-scrollbar-track {
+    /* background: #F2E4DA; */
+    background: transparent;
+    /* Color of the track */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    /* background-color: #735E50; */
+    background: #dbdbdb;
+    /* border: 1px solid #735E50; */
+    border-radius: 4px;
+    /* Rounded corners of the thumb */
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    /* background-color: #332114; */
+    background-color: #002266;
+    /* Color of the thumb on hover */
+  }
+
+  input:-webkit-autofill {
+    background: transparent !important;
+  }
+
+  /* Hide the up and down arrows */
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+
+  /* input[type='search']::-webkit-search-cancel-button {
+    display: none;
+  } */
+}
+
+.sun-editor-preview table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.sun-editor-preview td,
+.sun-editor-preview th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.text-editor > textarea {
+  display: none;
+}
